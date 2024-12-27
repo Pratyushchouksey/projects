@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#card{
+    height: 500px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+}
+
+.menu #icon{
+    /* padding-right: 5px; */
+    display: flex;
+    gap: 10px;
+} 
+
+.icon i{
+   font-size: 50px;
+}
+
+ #storiyan{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #888; 
+    padding: 4px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+ }
+
+ #storiyan::-webkit-scrollbar{
+    display: none;
+ }
+
+ .story{
+    padding: 4px;
+    height: 80px;
+    width: 80px;
+    background: linear-gradient(to right bottom,red,orange,purple);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+ }
+
+.story img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+#full{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+    padding: 15px 10px;
+    color: #fff;
+}
+
+#progress{
+    
+    width: 100%;
+    height: 10px;
+    border-radius: 50px;
+    background-color: gainsboro;
+}
+
+#growth{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(53,53,53);
+    border-radius: 50px;
+}
+
+#full h2{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 500;
+}

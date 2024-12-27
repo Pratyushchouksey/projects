@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+    flex-direction: column;
+}
+#cursor{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    transition: all linear 0.2s;
+}
+#box{
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    position: absolute;
+      }
+h1{
+    font-size: 80px;
+    position: relative;
+    z-index: 99;
+    mix-blend-mode: difference;
+}
